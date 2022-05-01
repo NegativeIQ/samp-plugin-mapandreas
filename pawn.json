@@ -6,7 +6,7 @@
             "name": "^samp-plugin-mapandreas-(.*).zip$",
             "platform": "linux",
             "archive": true,
-            "includes": ["pawno/include"],
+            "includes": ["include"],
             "plugins": ["plugins/mapandreas.so"],
             "files": {
                 "scriptfiles/SAfull.hmap": "scriptfiles/SAfull.hmap",
@@ -17,7 +17,7 @@
             "name": "^samp-plugin-mapandreas-(.*).zip$",
             "platform": "windows",
             "archive": true,
-            "includes": ["pawno/include"],
+            "includes": ["include"],
             "plugins": ["plugins/mapandreas.dll"],
             "files": {
                 "scriptfiles/SAfull.hmap": "scriptfiles/SAfull.hmap",
