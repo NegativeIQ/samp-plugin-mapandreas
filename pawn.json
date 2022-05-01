@@ -1,32 +1,31 @@
 {
-  "user": "philip1337",
-  "repo": "samp-plugin-mapandreas",
-  "resources": [
-    {
-      "name": "^MapAndreas-linux-x86.zip",
-      "platform": "linux",
-      "archive": true,
-      "includes": ["linux\\/include"],
-      "plugins": ["linux\\/plugins\\/mapandreas.so"],
-      "files": {
-        "linux\\/scriptfiles\\/SAfull.hmap": "scriptfiles\\/SAfull.hmap",
-        "linux\\/scriptfiles\\/SAmin.hmap": "scriptfiles\\/SAmin.hmap"
-      }
-    },
-    {
-      "name": "^MapAndreas-win-x86.zip",
-      "platform": "windows",
-      "archive": true,
-      "includes": ["windows\\/include"],
-      "plugins": ["windows\\/plugins\\/mapandreas.dll"],
-      "files": {
-        "windows\\/scriptfiles\\/SAfull.hmap": "scriptfiles\\/SAfull.hmap",
-        "windows\\/scriptfiles\\/SAmin.hmap": "scriptfiles\\/SAmin.hmap"
-      }
+    "user": "NegativeIQ",
+    "repo": "samp-plugin-mapandreas",
+    "resources": [
+        {
+            "name": "^samp-plugin-mapandreas-(.*).zip$",
+            "platform": "linux",
+            "archive": true,
+            "includes": ["pawno/include"],
+            "plugins": ["plugins/mapandreas.so"],
+            "files": {
+                "scriptfiles/SAfull.hmap": "scriptfiles/SAfull.hmap",
+                "scriptfiles/SAmin.hmap": "scriptfiles/SAmin.hmap"
+            }
+        },
+        {
+            "name": "^samp-plugin-mapandreas-(.*).zip$",
+            "platform": "windows",
+            "archive": true,
+            "includes": ["pawno/include"],
+            "plugins": ["plugins/mapandreas.dll"],
+            "files": {
+                "scriptfiles/SAfull.hmap": "scriptfiles/SAfull.hmap",
+                "scriptfiles/SAmin.hmap": "scriptfiles/SAmin.hmap"
+            }
+        }
+    ],
+    "runtime": {
+        "plugins": ["NegativeIQ/samp-plugin-mapandreas"]
     }
-  ],
-  "runtime": {
-    "plugins": ["philip1337/samp-plugin-mapandreas"]
-  },
-  "contributors": ["philip1337"]
 }
